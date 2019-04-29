@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD7411632274ED11002F0CF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7411622274ED11002F0CF2 /* AppDelegate.swift */; };
+		BD7411682274ED12002F0CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7411662274ED11002F0CF2 /* Main.storyboard */; };
+		BD74116A2274ED12002F0CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7411692274ED12002F0CF2 /* Assets.xcassets */; };
+		BD74116D2274ED12002F0CF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD74116B2274ED12002F0CF2 /* LaunchScreen.storyboard */; };
+		BD7411782274ED12002F0CF2 /* TylerTechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7411772274ED12002F0CF2 /* TylerTechTests.swift */; };
+		BD7411862274EDDE002F0CF2 /* main.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD7411832274ED58002F0CF2 /* main.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD74118F2275038B002F0CF2 /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74118E2275038B002F0CF2 /* ServiceApi.swift */; };
+		BD74119322750919002F0CF2 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74119222750919002F0CF2 /* UserListViewController.swift */; };
+		BD74119522750B79002F0CF2 /* UserListVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74119422750B79002F0CF2 /* UserListVCViewModel.swift */; };
+		BD74119722750B89002F0CF2 /* UserListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74119622750B89002F0CF2 /* UserListCellViewModel.swift */; };
+		BD74119922750BC9002F0CF2 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74119822750BC9002F0CF2 /* UserListCell.swift */; };
+		BD74119B22750E21002F0CF2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74119A22750E21002F0CF2 /* DataModel.swift */; };
+		BD74119D22763A0F002F0CF2 /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74119C22763A0F002F0CF2 /* UserMapViewController.swift */; };
+		BD7411A022763A89002F0CF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74119F22763A89002F0CF2 /* Constants.swift */; };
+		BD7411A222763D90002F0CF2 /* UserMapVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7411A122763D90002F0CF2 /* UserMapVCViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD7411742274ED12002F0CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7411572274ED11002F0CF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD74115E2274ED11002F0CF2;
+			remoteInfo = TylerTech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD7411872274EDDE002F0CF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD7411862274EDDE002F0CF2 /* main.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BD74115F2274ED11002F0CF2 /* TylerTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TylerTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7411622274ED11002F0CF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD7411672274ED11002F0CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD7411692274ED12002F0CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD74116C2274ED12002F0CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD74116E2274ED12002F0CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7411732274ED12002F0CF2 /* TylerTechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TylerTechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7411772274ED12002F0CF2 /* TylerTechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TylerTechTests.swift; sourceTree = "<group>"; };
+		BD7411792274ED12002F0CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7411832274ED58002F0CF2 /* main.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = main.framework; path = TylerTech/main.framework; sourceTree = "<group>"; };
+		BD74118E2275038B002F0CF2 /* ServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		BD74119222750919002F0CF2 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		BD74119422750B79002F0CF2 /* UserListVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVCViewModel.swift; sourceTree = "<group>"; };
+		BD74119622750B89002F0CF2 /* UserListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCellViewModel.swift; sourceTree = "<group>"; };
+		BD74119822750BC9002F0CF2 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		BD74119A22750E21002F0CF2 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		BD74119C22763A0F002F0CF2 /* UserMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
+		BD74119F22763A89002F0CF2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD7411A122763D90002F0CF2 /* UserMapVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapVCViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD74115C2274ED11002F0CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7411702274ED12002F0CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD7411562274ED11002F0CF2 = {
+			isa = PBXGroup;
+			children = (
+				BD7411612274ED11002F0CF2 /* TylerTech */,
+				BD7411762274ED12002F0CF2 /* TylerTechTests */,
+				BD7411602274ED11002F0CF2 /* Products */,
+				BD7411822274ED58002F0CF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD7411602274ED11002F0CF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD74115F2274ED11002F0CF2 /* TylerTech.app */,
+				BD7411732274ED12002F0CF2 /* TylerTechTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD7411612274ED11002F0CF2 /* TylerTech */ = {
+			isa = PBXGroup;
+			children = (
+				BD74119E22763A6B002F0CF2 /* Constants */,
+				BD741191227508FA002F0CF2 /* ViewModels */,
+				BD741190227508F0002F0CF2 /* Views */,
+				BD74118D22750379002F0CF2 /* APILayer */,
+				BD7411882274F194002F0CF2 /* DataModel */,
+				BD7411622274ED11002F0CF2 /* AppDelegate.swift */,
+				BD7411662274ED11002F0CF2 /* Main.storyboard */,
+				BD7411692274ED12002F0CF2 /* Assets.xcassets */,
+				BD74116B2274ED12002F0CF2 /* LaunchScreen.storyboard */,
+				BD74116E2274ED12002F0CF2 /* Info.plist */,
+			);
+			path = TylerTech;
+			sourceTree = "<group>";
+		};
+		BD7411762274ED12002F0CF2 /* TylerTechTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD7411772274ED12002F0CF2 /* TylerTechTests.swift */,
+				BD7411792274ED12002F0CF2 /* Info.plist */,
+			);
+			path = TylerTechTests;
+			sourceTree = "<group>";
+		};
+		BD7411822274ED58002F0CF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD7411832274ED58002F0CF2 /* main.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD7411882274F194002F0CF2 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD74119A22750E21002F0CF2 /* DataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		BD74118D22750379002F0CF2 /* APILayer */ = {
+			isa = PBXGroup;
+			children = (
+				BD74118E2275038B002F0CF2 /* ServiceApi.swift */,
+			);
+			path = APILayer;
+			sourceTree = "<group>";
+		};
+		BD741190227508F0002F0CF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD74119222750919002F0CF2 /* UserListViewController.swift */,
+				BD74119822750BC9002F0CF2 /* UserListCell.swift */,
+				BD74119C22763A0F002F0CF2 /* UserMapViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD741191227508FA002F0CF2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD74119422750B79002F0CF2 /* UserListVCViewModel.swift */,
+				BD74119622750B89002F0CF2 /* UserListCellViewModel.swift */,
+				BD7411A122763D90002F0CF2 /* UserMapVCViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BD74119E22763A6B002F0CF2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BD74119F22763A89002F0CF2 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD74115E2274ED11002F0CF2 /* TylerTech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD74117C2274ED12002F0CF2 /* Build configuration list for PBXNativeTarget "TylerTech" */;
+			buildPhases = (
+				BD74115B2274ED11002F0CF2 /* Sources */,
+				BD74115C2274ED11002F0CF2 /* Frameworks */,
+				BD74115D2274ED11002F0CF2 /* Resources */,
+				BD7411872274EDDE002F0CF2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TylerTech;
+			productName = TylerTech;
+			productReference = BD74115F2274ED11002F0CF2 /* TylerTech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD7411722274ED12002F0CF2 /* TylerTechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD74117F2274ED12002F0CF2 /* Build configuration list for PBXNativeTarget "TylerTechTests" */;
+			buildPhases = (
+				BD74116F2274ED12002F0CF2 /* Sources */,
+				BD7411702274ED12002F0CF2 /* Frameworks */,
+				BD7411712274ED12002F0CF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD7411752274ED12002F0CF2 /* PBXTargetDependency */,
+			);
+			name = TylerTechTests;
+			productName = TylerTechTests;
+			productReference = BD7411732274ED12002F0CF2 /* TylerTechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD7411572274ED11002F0CF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Fahad Idrees";
+				TargetAttributes = {
+					BD74115E2274ED11002F0CF2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BD7411722274ED12002F0CF2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD74115E2274ED11002F0CF2;
+					};
+				};
+			};
+			buildConfigurationList = BD74115A2274ED11002F0CF2 /* Build configuration list for PBXProject "TylerTech" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD7411562274ED11002F0CF2;
+			productRefGroup = BD7411602274ED11002F0CF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD74115E2274ED11002F0CF2 /* TylerTech */,
+				BD7411722274ED12002F0CF2 /* TylerTechTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD74115D2274ED11002F0CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD74116D2274ED12002F0CF2 /* LaunchScreen.storyboard in Resources */,
+				BD74116A2274ED12002F0CF2 /* Assets.xcassets in Resources */,
+				BD7411682274ED12002F0CF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7411712274ED12002F0CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD74115B2274ED11002F0CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD74119922750BC9002F0CF2 /* UserListCell.swift in Sources */,
+				BD7411A222763D90002F0CF2 /* UserMapVCViewModel.swift in Sources */,
+				BD74119522750B79002F0CF2 /* UserListVCViewModel.swift in Sources */,
+				BD74119D22763A0F002F0CF2 /* UserMapViewController.swift in Sources */,
+				BD74119322750919002F0CF2 /* UserListViewController.swift in Sources */,
+				BD7411632274ED11002F0CF2 /* AppDelegate.swift in Sources */,
+				BD74118F2275038B002F0CF2 /* ServiceApi.swift in Sources */,
+				BD74119722750B89002F0CF2 /* UserListCellViewModel.swift in Sources */,
+				BD74119B22750E21002F0CF2 /* DataModel.swift in Sources */,
+				BD7411A022763A89002F0CF2 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD74116F2274ED12002F0CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7411782274ED12002F0CF2 /* TylerTechTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD7411752274ED12002F0CF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD74115E2274ED11002F0CF2 /* TylerTech */;
+			targetProxy = BD7411742274ED12002F0CF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD7411662274ED11002F0CF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD7411672274ED11002F0CF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD74116B2274ED12002F0CF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD74116C2274ED12002F0CF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD74117A2274ED12002F0CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD74117B2274ED12002F0CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD74117D2274ED12002F0CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y6XXR3U4V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TylerTech",
+				);
+				INFOPLIST_FILE = TylerTech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobo.sample-FireBase.TylerTech";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD74117E2274ED12002F0CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y6XXR3U4V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TylerTech",
+				);
+				INFOPLIST_FILE = TylerTech/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobo.sample-FireBase.TylerTech";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD7411802274ED12002F0CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y6XXR3U4V;
+				INFOPLIST_FILE = TylerTechTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobo.sample-FireBase.TylerTechTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TylerTech.app/TylerTech";
+			};
+			name = Debug;
+		};
+		BD7411812274ED12002F0CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y6XXR3U4V;
+				INFOPLIST_FILE = TylerTechTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobo.sample-FireBase.TylerTechTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TylerTech.app/TylerTech";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD74115A2274ED11002F0CF2 /* Build configuration list for PBXProject "TylerTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD74117A2274ED12002F0CF2 /* Debug */,
+				BD74117B2274ED12002F0CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD74117C2274ED12002F0CF2 /* Build configuration list for PBXNativeTarget "TylerTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD74117D2274ED12002F0CF2 /* Debug */,
+				BD74117E2274ED12002F0CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD74117F2274ED12002F0CF2 /* Build configuration list for PBXNativeTarget "TylerTechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7411802274ED12002F0CF2 /* Debug */,
+				BD7411812274ED12002F0CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD7411572274ED11002F0CF2 /* Project object */;
+}
